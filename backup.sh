@@ -61,6 +61,8 @@ do
 done
 
 # [TASK 12]
-tar -czvf $backupFileName ${toBackup[@]}
+tar -czvf $backupFileName ${toBackup[@]};
+echo "Backup created: $backupFileName";
 # [TASK 13]
-mv "$backupFileName" "$destDirAbsPath"
+mv "$backupFileName" "$destDirAbsPath";
+echo "Backup moved to: $destDirAbsPath/$backupFileName";
